@@ -1,7 +1,7 @@
 openapi: 3.1.0
 info:
   title: CardPay API
-  version: 1.0.4
+  version: 1.0.5
   description: Self-hosted card-transfer payment and incoming SMS API.
 servers:
   - url: https://pay.example.com/api/v1
