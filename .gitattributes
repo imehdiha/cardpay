@@ -1,0 +1,16 @@
+* text=auto eol=lf
+
+*.php text diff=php
+*.md text diff=markdown
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.pdf binary
+
+/tests export-ignore
+/.github export-ignore
+/.gitattributes export-ignore
+/phpunit.xml.dist export-ignore

@@ -1,0 +1,10 @@
+Options -Indexes
+RewriteEngine On
+
+# Serve the public directory when the ZIP is extracted into a domain root.
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ public/$1 [L]
+
+<FilesMatch "(^\.|composer\.(json|lock)|phpunit\.xml|README\.md)$">
+  Require all denied
+</FilesMatch>

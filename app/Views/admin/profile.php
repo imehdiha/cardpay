@@ -1,0 +1,7 @@
+<div class="detail-grid">
+  <section class="panel">
+    <div class="panel-head"><div><h2>پروفایل مدیر</h2><p>اطلاعات نشست و آخرین ورود</p></div><span class="avatar large"><?= \CardPay\Core\View::e(mb_substr($profile['name'],0,1)) ?></span></div>
+    <dl class="detail-list"><div><dt>نام</dt><dd><?= \CardPay\Core\View::e($profile['name']) ?></dd></div><div><dt>نام کاربری</dt><dd><?= \CardPay\Core\View::e($profile['username']) ?></dd></div><div><dt>نقش</dt><dd><?= \CardPay\Core\View::e($profile['role']) ?></dd></div><div><dt>آخرین ورود</dt><dd><?= \CardPay\Core\View::e(\CardPay\Core\View::localDate($profile['last_login_at']??null,(string)($settings['timezone']??'Asia/Tehran'))) ?></dd></div><div><dt>IP آخرین ورود</dt><dd><?= \CardPay\Core\View::e($profile['last_login_ip']??'—') ?></dd></div></dl>
+  </section>
+  <form class="panel form-panel" method="post" action="<?= \CardPay\Core\View::e(\CardPay\Core\Url::to('/admin/profile/password')) ?>"><input type="hidden" name="_csrf" value="<?= \CardPay\Core\View::e($csrf) ?>"><div class="panel-head"><div><h2>تغییر رمز عبور</h2><p>حداقل ۱۰ نویسه انتخاب کنید.</p></div></div><div class="stack"><label>رمز فعلی<input name="current_password" type="password" required></label><label>رمز جدید<input name="new_password" type="password" minlength="10" required></label><label>تکرار رمز<input name="new_password_confirmation" type="password" minlength="10" required></label><button class="btn primary wide">تغییر رمز عبور</button></div></form>
+</div>

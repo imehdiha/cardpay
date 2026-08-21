@@ -1,0 +1,11 @@
+Options -Indexes
+DirectoryIndex index.php
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+<FilesMatch "\.(env|ini|log|sql|lock|phar)$">
+  Require all denied
+</FilesMatch>

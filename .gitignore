@@ -1,0 +1,16 @@
+/.env
+/.DS_Store
+/composer.phar
+/phpunit.xml
+/vendor/
+/dist/
+/storage/logs/*.log
+/storage/cache/*
+/storage/sessions/*
+/storage/uploads/*
+/storage/installed.lock
+/public/uploads/*
+/.phpunit.cache/
+**/.DS_Store
+!/storage/**/.gitkeep
+!/public/uploads/.htaccess

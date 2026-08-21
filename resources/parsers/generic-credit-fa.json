@@ -1,0 +1,14 @@
+{
+  "name": "Generic Persian credit SMS",
+  "bank_name": "Generic",
+  "sender_pattern": "/^BANK$/i",
+  "amount_regex": "/واریز[:\\s]+(?<amount>[0-9۰-۹,٬ ]+)/u",
+  "date_regex": null,
+  "time_regex": null,
+  "transaction_type_regex": null,
+  "positive_keywords": ["واریز"],
+  "negative_keywords": ["برداشت", "مانده", "تبلیغ"],
+  "sample_sms": "واریز: ۸۰٬۰۰۰٬۱۲۷ ریال",
+  "is_active": false,
+  "warning": "Template only; test against the current official bank format before enabling."
+}

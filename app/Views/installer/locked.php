@@ -1,0 +1,1 @@
+<section class="install-card centered"><div class="brand-mark">✓</div><h1>Installer قفل است</h1><p class="muted">CardPay قبلاً نصب شده است. برای نصب مجدد باید فایل <code>storage/installed.lock</code> را به‌صورت دستی حذف کنید.</p><a class="btn primary" href="<?= \CardPay\Core\View::e(\CardPay\Core\Url::to('/admin')) ?>">ورود به پنل</a></section>

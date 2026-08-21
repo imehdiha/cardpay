@@ -1,0 +1,44 @@
+{
+  "name": "cardpay/cardpay",
+  "description": "Self-hosted card-transfer payment gateway for PHP and MySQL",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mehdi Hashemian"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "ext-openssl": "*",
+    "ext-pdo": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "CardPay\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CardPay\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "@php vendor/bin/phpunit",
+    "check": [
+      "@php bin/lint.php",
+      "@test"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "allow-plugins": false
+  }
+}
