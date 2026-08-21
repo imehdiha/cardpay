@@ -1,6 +1,16 @@
 # CardPay
 
+[![Tests](https://github.com/imehdiha/cardpay/actions/workflows/tests.yml/badge.svg)](https://github.com/imehdiha/cardpay/actions/workflows/tests.yml)
+[![PHP 8.2+](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white)](docs/requirements.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 CardPay یک درگاه مستقل و Self-hosted برای مدیریت پرداخت کارت‌به‌کارت یک فروشگاه است. برنامه برای PHP 8.2، MySQL 8/MariaDB و هاست اشتراکی طراحی شده و برای کار اصلی به Node.js، Laravel، Redis، Queue worker یا Cron نیاز ندارد.
+
+> CardPay درگاه رسمی بانکی نیست؛ تأیید پرداخت را با تطبیق مبلغ یکتا و پیامک واریز انجام می‌دهد. پیش از استفادهٔ واقعی، مدل امنیت، تنظیمات دامنه، HTTPS، پشتیبان‌گیری و Parser بانک خود را بررسی و آزمایش کنید.
+
+## وضعیت پروژه
+
+این مخزن نسخه‌ای است که در یک استقرار واقعی استفاده شده و اکنون برای توسعهٔ عمومی منتشر می‌شود. مسیرهای اصلی پرداخت، HMAC، دریافت SMS، تطبیق، بررسی دستی و Webhook دارای تست Unit/Integration هستند؛ بااین‌حال نگهدارنده هیچ تضمین مالی یا بانکی ارائه نمی‌کند و هر استقرار باید مستقلاً ارزیابی شود.
 
 ## قابلیت‌ها
 
